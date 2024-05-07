@@ -1,12 +1,11 @@
 :root {
   
-  --primary: rgb(88, 42, 255); 
-  --secondary: rgb(12, 12, 12); 
+    --primary: rgb(88, 42, 255); 
+    --secondary: rgb(12, 12, 12); 
     --bgDark: rgb(12, 12, 12);
     --white: rgb(250, 250, 250);
     --bgLight: rgb(190, 181, 181);
   }
-  
   * {
     padding: 0;
     margin: 0;
@@ -38,11 +37,7 @@
   body {
     font-family: "Poppins", sans-serif;
   }
-  .container {
-    max-width: 1152px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
+  
   .hero {
     padding-top: 2rem;
   }
@@ -134,11 +129,7 @@
     width: 50px;
     background: white;
   }
-  section.services .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-  }
+  
   section.services .card-grid .card {
     background: var(--white);
     padding: 3rem 2rem;
@@ -202,7 +193,6 @@
   .btn-primary {
     background-color: var(--primary);
     color: var(--secondary);
-    margin-top: -15rem;
   }
   .btn-primary:hover {
     background: transparent;
@@ -227,3 +217,107 @@
     line-height: 1.2;
     color: var(--white);
   }
+@media screen and (min-width: 768px) {
+  .telephone-only {
+    display: none;
+  }
+  section.services .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+  .services-head + p {
+    margin-bottom: 3rem;
+  }
+  section.services .card-grid .card {
+    background: var(--white);
+    text-align: center;
+    transition: all 0.2s ease;
+    margin-bottom: 70px;
+  }
+  section.services .card-grid .card img {
+    transform: translateX(-50%);
+    color: var();
+  }
+  #main{
+    font-size: 2rem;
+    font-weight: 50;
+    line-height: 1.2;
+    color: var(--white);
+    display: flex; /* Utilizziamo Flexbox */
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  }
+  .btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  }
+  header nav .logo {
+    margin-right: 0rem;
+  }
+  #parag{
+    display: block;
+  }
+  .hero .right {
+    color: var(--white);
+    margin-top: 0rem;
+  }
+  .hero .right h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  .hero .right h1 {
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .hero .right h1 span {
+    color: var(--primary);
+  }
+  .hero .right p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+  }
+  .hero .left img {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+    margin-bottom: 80px;
+  }
+  .btn-primary {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+  html{
+    background-color: var(--white);
+  }
+  header {
+    background-color: var(--bgDark);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 50% 100%, 0 96%);
+  }
+}
