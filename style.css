@@ -244,10 +244,12 @@
     text-align: center;
     transition: all 0.2s ease;
     margin-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
   }
   section.services .card-grid .card img {
     transform: translateX(-50%);
-    color: var();
   }
   #main{
     font-size: 2rem;
@@ -320,4 +322,7 @@
     background-color: var(--bgDark);
     clip-path: polygon(0 0, 100% 0, 100% 96%, 50% 100%, 0 96%);
   }
+  section {
+    padding: 2rem;
+}
 }
