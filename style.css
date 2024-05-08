@@ -159,7 +159,7 @@
     background: var(--primary);
   }
   section.services .card-grid .card:hover h2 {
-    color: var(--white);
+    color: var(--bgDark);
   }
   section.services .card-grid .card:hover p {
     color: var(--white);
