@@ -148,6 +148,7 @@
     font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: var(--primary);
   }
   section.services .card-grid .card p {
     font-family: "Lato", sans-serif;
@@ -308,7 +309,7 @@
     background: transparent;
     color: var(--primary);
     border-color: var(--primary);
-    margin-bottom: 80px;
+    margin-bottom: 3rem;
   }
   .btn-primary {
     background: transparent;
@@ -324,5 +325,12 @@
   }
   section {
     padding: 2rem;
+  }
+  #mobpar{
+    padding: 2rem;
+  }
+  section.about .socials {
+    display: flex;
+    justify-content: center;
 }
 }
