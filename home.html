@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="icon" href="img/Alessio.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
             rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
         <title>Alessio Zanetti</title>
     </head>
     <body>
-        <header>
-        
-            <div class="container">
-                <nav class="flex items-centre justify-between">
-                    <div class="left flex justfiy-right">
-                        <div class="logo"> <img src="img/logoAZ.png" width="70px" alt="logo"> </div>
-                            <h1 id="main">Alessio Zanetti</h1>
+        <header class="poligono">
+            <div class="container primo">
+                <nav class="nav">
+                    <div class="logo-main">
+                        <div class="logo"> <img src="img/logoAZ.png" width="70px" alt="logo"></div>
+                        <h1  class="only-desktop" id="main">Alessio Zanetti</h1>
                     </div>
-                    <div class="right">
+                    <div class="whatsapp">
                         <a href="whatsapp://send?phone=3388396158&text=Buongiorno,%20vengo%20dal%20sito%20web%20e%20vorrei%20chiederti%20delle%20informazioni"><button class="btn btn-primary">Contact</button></a>
                     </div>
                 </nav>
             </div>
             <div class="container">
-                <div class="hero flex items-centre justify-between" id="parag">
-                    <div class="left flex-1 justify-center">
-                        <img src="img/profilo.jpg" />
+                <div class="presentazione" id="parag">
+                    <div class="profilo-div">
+                        <img src="img/profilo.jpg" width="400px" height="auto"/>
                     </div>
-                    <div class="right flex-1" id="mobpar">
+                    <div class="descrizione" id="mobpar">
                         <h6>ALESSIO ZANETTI</h6>
                         <h1>
                             Sono un<br />
@@ -52,14 +45,14 @@
                 </div>
             </div>
         </header>
-            <section class="about">
-                    <div class="container flex items-centre">
-                        <div class="desktop-only left flex-1 justify-right">
+        <section class="about">
+                    <div class="container">
+                        <div class="profilo-div-about only-desktop">
                             <img src="img/profilo.jpg"
                                 height="400px" alt="profile pic" />
                         </div>
-                        <br class="telephone-only">
-                        <div class="right flex-1">
+                        <br class="only-mobile">
+                        <div class="about-descrizione">
                             <h1>About <span>Me</span></h1>
                             <h3>Ciao! Sono Alessio Zanetti.</h3>
                             <p>
@@ -69,14 +62,14 @@
                                 svolgere i miei hobby preferiti.
                             </p>
                             <div class="socials">
-                                <a href="https://www.instagram.com/_alessiozanetti_/"><img
-                                        src="img/insta.png"
-                                        width="40px" /></a>
+                                <a href="https://www.instagram.com/_alessiozanetti_/"><img src="img/insta.png" width="40px" /></a>
+                                <a href="mailto:alessioz2005@gmail.com"><img src="img/gmail.png" width="40px" /></a>
+                                <a href="whatsapp://send?phone=3388396158&text=Buongiorno,%20vengo%20dal%20sito%20web%20e%20vorrei%20chiederti%20delle%20informazioni"><img src="img/whatsApp.png" width="40px" /></a>
                             </div>
                         </div>
                     </div>
         </section>
-        <section class="services">
+        <section class="services poligono">
             <div class="container">
                 <h1 class="services-head">Conoscenze</h1>
                 <p class="mobilep">Tutte le conoscenze che ho maturato in questi anni.</p>
@@ -115,5 +108,48 @@
                 </div>
             </div>
         </section>
+        <section class="project">
+            <div class="container">
+                <div class="foto-project only-desktop">
+                    <img src="img/project1.jpg"
+                        height="500px" alt="profile pic" />
+                </div>
+                <br class="only-mobile">
+                <div class="project-descrizione">
+                    <h1>La mia <span>App</span></h1>
+                    <h3>La mia prima applicazione Multiplatform</h3>
+                    <p>
+                        Ho creato un app per dispositivi mobile che funge da password manager, 
+                        tramite una registrazione con mail e password, l'utente sara' in grado 
+                        di memorizzare le password su un database firebase con i dati crittografati.
+                    </p>
+                    <div class="show-project">
+                        <a href="project.html">
+                            <button class="btn btn-secondary">SCOPRI DI PI&Uacute</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <div class="footer-div">
+                <h4>Alessio Zanetti's Site</h4>
+                <div class="footer-soc">
+                    <a href="https://www.instagram.com/_alessiozanetti_/"><img src="img/insta.png" width="40px" /></a>
+                    <a href="mailto:alessioz2005@gmail.com"><img src="img/gmail.png" width="40px" /></a>
+                    <a href="htwhatsapp://send?phone=3388396158&text=Buongiorno,%20vengo%20dal%20sito%20web%20e%20vorrei%20chiederti%20delle%20informazioni"><img src="img/whatsApp.png" width="40px" /></a>
+                </div>
+                
+            </div>
+            <div class="footer-div only-desktop">
+                <h4>Grazie per aver visualizzato il mio Sito Web</h4>
+                <h4>Buona giornata :)</h4>
+            </div>
+            <div class="footer-div">
+                <h4>Designed by Alessio Zanetti</h4>
+                <h4></h4>
+            </div>
+
+        </div>
     </body>
 </html>
