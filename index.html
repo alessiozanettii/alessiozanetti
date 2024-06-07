@@ -6,10 +6,15 @@
         <link rel="icon" href="img/Alessio.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
             rel="stylesheet" />
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <title>Alessio Zanetti</title>
     </head>
     <body>
-        <header class="poligono">
+        <script>
+            AOS.init();
+          </script>
+        <header class="poligono" data-aos="zoom-out" data-aos-duration="2000">
             <div class="container primo">
                 <nav class="nav">
                     <div class="logo-main">
@@ -45,7 +50,8 @@
                 </div>
             </div>
         </header>
-        <section class="about">
+        <section class="about"  data-aos="fade-up" data-aos-offset="250"
+        data-aos-duration="2000">
                     <div class="container">
                         <div class="profilo-div-about only-desktop">
                             <img src="img/profilo.jpg"
@@ -69,12 +75,15 @@
                         </div>
                     </div>
         </section>
-        <section class="services poligono">
+        <section class="services poligono" >
             <div class="container">
                 <h1 class="services-head">Conoscenze</h1>
                 <p class="mobilep">Tutte le conoscenze che ho maturato in questi anni.</p>
                 <div class="card-grid">
-                    <div class="card">
+                    <div class="card" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-offset="150"
+                    data-aos-duration="2000">
                         <img src="img/web.png" />
                         <h2>Programmazione Web</h2>
                         <p>
@@ -85,7 +94,10 @@
                             progetti scolastici.
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-offset="150"
+                    data-aos-duration="2000">
                         <img src="img/generale.jpg" />
                         <h2>Programmazione Generale</h2>
                         <p>
@@ -95,7 +107,10 @@
                             e con questi ho creato progetti. 
                         </p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-offset="150"
+                    data-aos-duration="2000">
                         <img src="img/mobile.jpg" />
                         <h2>Sviluppo Mobile Multiplatform</h2>
                         <p>
@@ -108,7 +123,8 @@
                 </div>
             </div>
         </section>
-        <section class="project">
+        <section class="project" data-aos="fade-up" data-aos-offset="250"
+        data-aos-duration="2000">
             <div class="container">
                 <div class="foto-project only-desktop">
                     <img src="img/project1.jpg"
@@ -131,7 +147,7 @@
                 </div>
             </div>
         </section>
-        <div class="footer">
+        <div class="footer" class="app" ">
             <div class="footer-div">
                 <h4>Alessio Zanetti's Site</h4>
                 <div class="footer-soc">
@@ -143,7 +159,7 @@
             </div>
             <div class="footer-div only-desktop">
                 <h4>Grazie per aver visualizzato il mio Sito Web</h4>
-                <h4>Buona giornata :)</h4>
+                <h4>Le auguro una buona giornata</h4>
             </div>
             <div class="footer-div">
                 <h4>Designed by Alessio Zanetti</h4>
