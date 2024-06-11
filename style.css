@@ -11,6 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    overflow: hidden;
   }
   
 @media screen and (min-width: 768px) {
